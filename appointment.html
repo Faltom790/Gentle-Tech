@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gentle </title>
+    <link rel="shortcut icon" href="./Static/img/logo.png">
+    <link rel="stylesheet" href="./Static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Static/css/appoint.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+
+    <script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"transparency":"5","corners":"normal","position":"bottom"})}); </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top top-0 ">
+        <div class="container-fluid" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+          <a class="navbar-brand ms-4" href="index.html"> <img src="./Static/img/logo.png" alt="" style="width: 40px; height: 37px;"> Gentle </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-2">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="shop.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3 active " href="appointment.html">Book an Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="contactus.html">Contact us</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+	<div class="alert alert-primary alert-dismissible show" role="alert">
+        Form's with an <strong> asterik (*) sign </strong>  are compulsory.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div> 
+<div class="wrapper">
+	<div class="header">
+		<ul>
+			<li class="active form_1_progessbar">
+				<div>
+					<p>1</p>
+				</div>
+			</li>
+			<li class="form_2_progessbar">
+				<div>
+					<p>2</p>
+				</div>
+			</li>
+			<li class="form_3_progessbar">
+				<div>
+					<p>3</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<form action="https://formspree.io/f/mlekwnoe"
+	method="POST">
+	<div class="form_wrap">
+		<div class="form_1 data_info">
+			<h2>Customer Information</h2>
+            <!-- <form> -->
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="first_name">First Name*</label>
+						<input type="text" name="First Name" class="input" id="first_name" required="text">
+					</div>
+					<div class="input_wrap">
+						<label for="last_name">Last Name*</label>
+						<input type="text" name="Last Name" class="input" id="last_name" required="text">
+					</div>
+					<div class="input_wrap">
+						<label for="email"> Email Address* </label>
+						<input type="email" name="Email Address" class="input" id="email_address" required="email">
+					</div>
+                    <div class="input_wrap">
+						<label for="Number">Phone Number*</label>
+						<input name="phone number" required="tel" type="text" class="input" id="phone" onkeypress="phoneno()" maxlength="11">
+					
+					</div>
+				</div>
+			<!-- </form> -->
+            
+		</div>
+		<div class="form_2 data_info" style="display: none;">
+			<h2> Repair Options  </h2>
+            <!-- <form> -->
+				<div class="form_container">
+                    <div class="input_wrap">
+						<!-- <label for="option">Type of Service</label>
+                        <select name="" id="country">
+                            <option value="country"> Select Service</option>
+                            <option value="repair"> Laptop Repair</option>
+                            <option value="Purchase"> Laptop Purchase</option>
+                            <option value="accessory"> Laptop Accessories Purchase</option>
+                            <option value="desktop repair"> Desktop Repair</option>
+                            <option value="SmartPhone repair"> Smartphone Repair</option>
+                        </select> -->
+					</div>
+					<div class="input_wrap">
+						<label for="text"> Laptop Brand and Model</label>
+						<input type="text" name=" Laptop Brand and model for repair" class="input" id="email">
+					</div>
+					<div class="input_wrap">
+						<label for="text"> Description of Problem  and Issue </label>
+						<input type="text" name="Description of Problem  and Issue" class="input" id="text">
+					</div>
+				</div>
+			<!-- </form> -->
+		</div>
+		<div class="form_3 data_info" style="display: none;">
+			<h2>  Sale Options </h2>
+			<!-- <form> -->
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="Laptop"> New laptops (Brand Name and model) </label>
+						<input name="New laptops (Brand Name and model)" type="text" name="New laptops" class="input">
+					</div> 
+					<div class="input_wrap">
+						<label for="Accessories"> Laptop Accessories e.g. Mouse, Keyboards .e.t.c </label>
+						<input name="Laptop Accessories e.g. Mouse, Keyboards .e.t.c" type="text" name=" Laptop Accessories" class="input">
+					</div>
+					<div class="input_wrap">
+						<label for=""> Refurbished laptops (Brand Name and model)</label>
+						<input name="Refurbished laptops (Brand Name and model)" type="text" class="input">
+					</div>
+				</div>
+			<!-- </form> -->
+		</div>
+	</div>
+	<div class="btns_wrap">
+		<div class="common_btns form_1_btns">
+			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_2_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_3_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			<button role="submit" class="btn_done">Done</button>
+		</div>
+	</div>
+</div>
+</form>
+
+<!-- <div class="modal_wrapper">
+	<div class="shadow"></div>
+	<div class="success_wrap">
+		<span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+		<p>You have successfully completed the process.</p>
+	</div>
+</div> -->
+
+
+
+<script src="./Static/js/appointscript.js"></script>
+<script src="./Static/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="./Static/js/aboutscript.js"></script> -->
+
+</body>
